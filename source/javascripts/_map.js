@@ -21,12 +21,11 @@ function initialize() {
     
     //when the center has changed, but not the size of the map
     if(!this.get('size') || size===this.get('size')){
-       console.log('ccc');
        this.setValues({size:size,_center:this.getCenter()});         
     }
     //when the map has been resized
     else{
-      google.maps.event.addListenerOnce(this,'idle',function(){console.log('rrr');
+      google.maps.event.addListenerOnce(this,'idle',function(){
       this.setValues({size:size,center:this.get('_center')});});      
     }
   });
