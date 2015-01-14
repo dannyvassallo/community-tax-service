@@ -6,13 +6,18 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "normalize", "all" %>
   </head>
   <body class="<%= page_classes %>">
     <%= partial 'partials/navbar' %>
+    <%= partial 'partials/header' %>
     <%= yield %>
+    <%= partial 'partials/location' %>
   </body>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
   <%= javascript_include_tag  "all" %>
 </html>
