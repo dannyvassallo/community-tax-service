@@ -1,21 +1,37 @@
 #header{
-  background-image: url(../images/taxform.jpg);
+  background-image: url(../images/taxformforweb.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   background-position: 50% 50%;
+  color: #571631;
+  span{
+    font-size: 10px;
+  }
+  i{
+    color: #4cae4c;
+    font-size: 40px;
+    text-align: left;
+  }
   .container{
     width: 100%;
-    max-height: 400px;
-    height: 400px;
     margin-top: 90px;
+    max-width: 560px;
+    padding-bottom: 90px;
   }
   img {
     width: 100%;
     max-width: 560px;
     display: block;
-    margin: 90px auto;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter:         drop-shadow(5px 5px 5px #222); 
+    margin: 90px auto 10px auto;
+  }
+  .tagline{
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .shadow{
+    -webkit-filter: drop-shadow(1px 1px 5px #000);
+    filter:         drop-shadow(1px 1px 5px #000); 
   }
 }
